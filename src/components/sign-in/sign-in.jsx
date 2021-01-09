@@ -1,6 +1,7 @@
 import React from 'react';
 
 import FormInput from "../wigets/form-input/form-input";
+import Custombutton from "../wigets/custom-button/custom-button";
 
 import './sign-in.scss';
 
@@ -52,7 +53,7 @@ class SignIn extends React.Component {
                         required
                     />
 
-                    <input type="submit" name="submit" value="Submit Form"/>
+                    <Custombutton> Sign in </Custombutton>
                 </form>
             </div>
         );
