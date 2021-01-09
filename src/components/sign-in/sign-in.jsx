@@ -55,8 +55,10 @@ class SignIn extends React.Component {
                         required
                     />
 
-                    <Custombutton type='submit'> Sign in </Custombutton>
-                    <Custombutton onClick={SignInWithGoogle}> Sign in with Google</Custombutton>
+                    <div className='buttons'>
+                        <Custombutton type='submit'> Sign in </Custombutton>
+                        <Custombutton onClick={SignInWithGoogle} isGoogleSignIn> Sign in with Google</Custombutton>
+                    </div>
                 </form>
             </div>
         );
