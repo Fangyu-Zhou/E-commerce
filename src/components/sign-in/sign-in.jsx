@@ -1,7 +1,7 @@
 import React from 'react';
 
 import FormInput from "../wigets/form-input/form-input";
-import Custombutton from "../wigets/custom-button/custom-button";
+import CustomButton from "../wigets/custom-button/custom-button";
 
 import {SignInWithGoogle} from '../../firebase/firebase.utils';
 
@@ -56,8 +56,8 @@ class SignIn extends React.Component {
                     />
 
                     <div className='buttons'>
-                        <Custombutton type='submit'> Sign in </Custombutton>
-                        <Custombutton onClick={SignInWithGoogle} isGoogleSignIn> Sign in with Google</Custombutton>
+                        <CustomButton type='submit'> Sign in </CustomButton>
+                        <CustomButton onClick={SignInWithGoogle} isGoogleSignIn> Sign in with Google</CustomButton>
                     </div>
                 </form>
             </div>
