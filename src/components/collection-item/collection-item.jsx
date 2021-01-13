@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CustomButton from "../wigets/custom-button/custom-button";
+
 import './collection-item.scss';
 
 const CollectionItem = ({id, name, price, imageUrl}) => (
@@ -14,6 +16,7 @@ const CollectionItem = ({id, name, price, imageUrl}) => (
             <div className='price'>${price}</div>
         </div>
 
+        <CustomButton inverted>ADD TO CART</CustomButton>
     </div>
 
 );
