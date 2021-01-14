@@ -13,3 +13,9 @@ How to make a store item style
     }
   }
 ```
+
+Lesson 126
+<br>
+React Memorization: caching state value when not necessary to rerender the certain components
+<br>
+<b>Use reselect library => createSelector to split values in the state so that not all component will get rerendered after any state value has changed</b>
