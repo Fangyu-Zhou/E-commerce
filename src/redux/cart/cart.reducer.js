@@ -1,5 +1,6 @@
 import {cartActionType} from "./cart.actionType";
 import {addItemToCart} from "./cart.utils";
+import {removeItemById} from "./cart.action";
 
 const INITIAL_STATE = {
     hiddenCartDropDown: true,
@@ -17,6 +18,11 @@ const cartReducer = (state = INITIAL_STATE, action) => {
             return {
                 ...state,
                 cartItems: addItemToCart(state.cartItems, action.payload)
+            }
+        case cartActionType.REMOVE_ITEM:
+            return {
+                ...state,
+                cartItems: removeItemById(state.cartItems, action.payload)
             }
         default:
             return state;
