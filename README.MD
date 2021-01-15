@@ -43,3 +43,7 @@ export const selectCartItems = createSelector(
     (cart, user) => cart.cartItems //We can do some logic between cart and user here
 );
 ```
+
+Lesson 135
+<br>
+Use UTF-8 Dingbats for displaying the 'X' for remove button on checkout page
