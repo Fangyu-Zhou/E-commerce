@@ -4,13 +4,14 @@ import {connect} from 'react-redux';
 import {createStructuredSelector} from "reselect";
 
 import {selectCartItems} from "../../redux/cart/cart.selectors";
+import {toggleCartHidden} from "../../redux/cart/cart.action";
 
 import CustomButton from "../wigets/custom-button/custom-button";
 import CartItem from "../cart-item/cart-item";
 
 import './cart-dropdown.scss';
 
-const CartDropDown = ({cartItems, history}) => (
+const CartDropDown = ({cartItems, history, dispatch}) => (
     <div className='cart-dropdown'>
         <div className={'cart-items'}>
             {
@@ -22,7 +23,10 @@ const CartDropDown = ({cartItems, history}) => (
                     <span className='empty-message'>Your cart is empty</span>
             }
         </div>
-        <CustomButton onClick={() => history.push('/checkout')}>
+        <CustomButton onClick={() => {
+            history.push('/checkout');
+            dispatch(toggleCartHidden());
+        }}>
             GO TO CHECKOUT
         </CustomButton>
     </div>
