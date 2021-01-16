@@ -47,3 +47,6 @@ export const selectCartItems = createSelector(
 Lesson 135
 <br>
 Use UTF-8 Dingbats for displaying the 'X' for remove button on checkout page
+<br>
+<br>
+1/15/2021, I don't want to do anything today.
