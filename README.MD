@@ -54,3 +54,11 @@ Use UTF-8 Dingbats for displaying the 'X' for remove button on checkout page
 1/17/2021, addicted in xiu xian
 
 1/19/2021, first checkin, off time working
+
+1/20: redux persist
+<br>
+import ```persistReducer``` into root-reducer.js and add configure(local/session storage, reducers need persist)
+<br>
+import ```persistStore``` into store.js and export persistor
+<br>
+import ```PersistGate``` into index.js wrap the App.js inside and provide persistor
