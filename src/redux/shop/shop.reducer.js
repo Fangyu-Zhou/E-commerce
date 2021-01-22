@@ -1,7 +1,7 @@
 import SHOP_DATA from "./shopPageData";
 
 const INITIAL_STATE = {
-    shopItems: SHOP_DATA
+    collections: SHOP_DATA
 }
 
 const shopReducer = (state = INITIAL_STATE, action) => {
