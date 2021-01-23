@@ -62,3 +62,5 @@ import ```persistReducer``` into root-reducer.js and add configure(local/session
 import ```persistStore``` into store.js and export persistor
 <br>
 import ```PersistGate``` into index.js wrap the App.js inside and provide persistor
+
+1/22/2021 Check in
