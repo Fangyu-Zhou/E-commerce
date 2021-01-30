@@ -72,3 +72,5 @@ import ```PersistGate``` into index.js wrap the App.js inside and provide persis
 CSS, vw(view width) vs % => vw is the width percent of the whole screen while the % is the percent of the containers width
 
 1/25 Check in
+
+omg 1/29 Check in again!!
